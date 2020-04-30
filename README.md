@@ -27,6 +27,5 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 - [Nano Defender](https://addons.mozilla.org/firefox/addon/nano-defender-firefox/)
 - [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
 - [Bitwarden](https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/)
-- [Instapaper](https://addons.mozilla.org/firefox/addon/instapaper-official/)
 
 [Install samurai-filter](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/yujixr/samurai-filter/master/list.txt&title=samurai-filter)
