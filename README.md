@@ -20,6 +20,7 @@ echo -e "machine github.com\\nlogin yujixr\\npassword $GITHUB_TOKEN" > $HOME/.ne
 echo $GITHUB_TOKEN | docker login docker.pkg.github.com -u yujixr --password-stdin
 chsh -s $(which zsh)
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+chmod 600 $HOME/.ssh/id_*
 ```
 
 ### Firefox Add-ons
