@@ -3,13 +3,13 @@
 ## Install
 
 ``` bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/yujixr/dotfiles/master/install.sh)"
+bash -c "$(curl -fsSL https://yuji.ne.jp/install.sh)"
 ```
 
 ## Update
 
 ``` bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/yujixr/dotfiles/master/update.sh)"
+bash -c "$(curl -fsSL https://yuji.ne.jp/update.sh)"
 ```
 
 ## Other configs
