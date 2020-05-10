@@ -1,3 +1,7 @@
+## My settings
+setopt IGNOREEOF
+
+## Below are the default settings for manjaro
 ## Options section
 setopt correct                                                  # Auto correct mistakes
 setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
