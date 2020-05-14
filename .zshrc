@@ -1,5 +1,6 @@
 ## My settings
 setopt IGNOREEOF
+setopt nonomatch
 
 ## Below are the default settings for manjaro
 ## Options section
