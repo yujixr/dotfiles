@@ -10,21 +10,12 @@ cd ${DOT_DIR}
 
 if has "git"; then
     git pull
-elif has "curl" || has "wget"; then
-    TARBALL="https://github.com/yujixr/dotfiles/archive/master.tar.gz"
-    if has "curl"; then
-        curl -L ${TARBALL} -o master.tar.gz
-    else
-        wget ${TARBALL}        
-    fi
-    tar -zxvf master.tar.gz
-    rm -f master.tar.gz
-    mv -f dotfiles-master "${DOT_DIR}"
 else
-    echo "curl or wget or git required"
+    echo "git required"
     exit 1
 fi
 
+git submodule update --recursive -i
 for f in .??*;
 do
     [[ "$f" == ".git" ]] && continue
