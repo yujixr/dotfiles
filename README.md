@@ -3,13 +3,13 @@
 ## Install
 
 ``` bash
-bash -c "$(curl -fsSL https://yuji.ne.jp/install.sh)"
+curl -L https://yuji.ne.jp/install.sh | bash
 ```
 
 ## Update
 
 ``` bash
-bash -c "$(curl -fsSL https://yuji.ne.jp/update.sh)"
+curl -L https://yuji.ne.jp/update.sh | bash
 ```
 
 ## Other configs
