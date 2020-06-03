@@ -38,3 +38,7 @@ zsdoc/data
 !/tests/_output/.gitkeep
 
 # End of https://www.gitignore.io/api/ssh,zsh
+
+# Vim plugins
+.vim/dein/repos/**
+.vim/dein/.cache/**
