@@ -24,7 +24,6 @@ if [ ! -d ${DOT_DIR} ]; then
         ln -snf $DOT_DIR/"$f" $HOME/"$f"
         echo "Installed $f"
     done
-    mkdir -p ${DOT_DIR}/.vim/dein 
 else
     echo "dotfiles already exists"
     exit 1

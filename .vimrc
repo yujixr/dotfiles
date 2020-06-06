@@ -1,3 +1,5 @@
+set nocompatible
+
 " Encoding
 set encoding=utf-8
 set fileencoding=utf-8
@@ -8,8 +10,16 @@ syntax on
 set number
 set title
 set showmatch
-set showcmd
+set shortmess+=I "  Don't show startup message
 set t_Co=256
+set ttyfast
+
+" Menu settings
+set wildmenu
+set wildmode=full
+set showcmd
+set cmdheight=1
+set laststatus=2
 
 " Input settings
 set expandtab
@@ -17,6 +27,8 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set smartindent
+set clipboard=unnamedplus
+set autoread
 
 " Search config
 set ignorecase
@@ -36,10 +48,12 @@ if &runtimepath !~# '/dein.vim'
   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
-call dein#begin(expand('~/.vim/dein'))
-call dein#add('Shougo/dein.vim')
-call dein#add('tomasr/molokai')
-call dein#end()
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
+  call dein#load_toml('~/dotfiles/dein.toml')
+  call dein#end()
+  call dein#save_state()
+endif
 
 if dein#check_install()
   call dein#install()
