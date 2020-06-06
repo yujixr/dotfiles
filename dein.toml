@@ -1,9 +1,18 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# Color theme
 [[plugins]]
 repo = 'tomasr/molokai'
 
+# Powerline
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+# LSP
 [[plugins]]
 repo = 'prabirshrestha/async.vim'
 

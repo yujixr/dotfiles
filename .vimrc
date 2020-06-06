@@ -11,6 +11,7 @@ set showmatch
 set shortmess+=I " Don't show startup message
 set t_Co=256 " 256 color
 set ttyfast " Fast rendering
+set ttimeoutlen=50 " Speed up INSERT -> NORMAL
 
 " Menu settings
 set wildmenu
@@ -34,6 +35,13 @@ set smartcase
 set wrapscan
 set incsearch
 set hlsearch
+
+" Powerline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
+let g:airline_theme = 'papercolor'
 
 " LSP (Language Server Protocol)
 let g:lsp_diagnostics_enabled = 1
