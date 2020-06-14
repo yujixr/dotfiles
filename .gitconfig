@@ -9,3 +9,5 @@
 	helper = cache --timeout=3600
 [color]
 	ui = true
+[pull]
+	rebase = false

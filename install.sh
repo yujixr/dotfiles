@@ -21,8 +21,13 @@ if [ ! -d ${DOT_DIR} ]; then
         [[ "$f" == ".git" ]] && continue
         [[ "$f" == ".gitignore" ]] && continue
 
-        ln -snf $DOT_DIR/"$f" $HOME/"$f"
+        ln -snf "$DOT_DIR/$f" "$HOME/$f"
         echo "Installed $f"
+    done
+    for f in config/*;
+    do
+      ln -snf "$DOT_DIR/$f" "$HOME/.$f"
+      echo "Installed .$f"
     done
 else
     echo "dotfiles already exists"

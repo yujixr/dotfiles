@@ -21,6 +21,11 @@ do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".gitignore" ]] && continue
 
-    ln -snf $DOT_DIR/"$f" $HOME/"$f"
+    ln -snf "$DOT_DIR/$f" "$HOME/$f"
     echo "Updated $f"
+done
+for f in config/*;
+do
+    ln -snf "$DOT_DIR/$f" "$HOME/.$f"
+    echo "Updated .$f"
 done
