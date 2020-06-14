@@ -25,8 +25,8 @@ prompt powerlevel10k
 
 # Run natively under Wayland
 export MOZ_ENABLE_WAYLAND=1
-export GDK_BACKEND=wayland
-export CLUTTER_BACKEND=wayland
+# export GDK_BACKEND=wayland
+# export CLUTTER_BACKEND=wayland
 export QT_QPA_PLATFORM=wayland-egl
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export ECORE_EVAS_ENGINE=wayland_egl
