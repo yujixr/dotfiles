@@ -21,6 +21,14 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 chmod 600 $HOME/.ssh/id_*
 ```
 
+### Inhibit idle while fullscreen
+
+``` bash
+for con_id in `swaymsg -t get_tree | jq -r '..|tty select(.fullscreen_mode == 1)|.id'`; do
+  swaymsg "[con_id=$con_id]" inhibit_idle fullscreen
+done
+```
+
 ### Firefox Add-ons
 
 - [Bitwarden](https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/)

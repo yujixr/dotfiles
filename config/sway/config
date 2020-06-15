@@ -72,6 +72,9 @@ exec swayidle -w \
     bindsym $mod+Shift+q kill
     bindsym Mod1+F4 kill
 
+    # Lock screen
+    bindsym Mod1+l exec 'swaylock -f -c 000000'
+
     # Start your launcher
     bindsym $mod+d exec $menu
 
@@ -217,5 +220,7 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+exec swaylock -f -c 000000
 
 include /etc/sway/config.d/*
