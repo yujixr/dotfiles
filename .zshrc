@@ -23,17 +23,6 @@ compinit
 promptinit
 prompt powerlevel10k
 
-# Run natively under Wayland
-export MOZ_ENABLE_WAYLAND=1
-# export GDK_BACKEND=wayland
-export CLUTTER_BACKEND=wayland
-export QT_QPA_PLATFORM=wayland-egl
-export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-export ECORE_EVAS_ENGINE=wayland_egl
-export ELM_ENGINE=wayland_egl
-export SDL_VIDEODRIVER=wayland
-export _JAVA_AWT_WM_NONREPAINTING=1
-
 # Special keys
 # create a zkbd compatible hash;
 # to add other keys to this hash, see: man 5 terminfo

@@ -24,8 +24,3 @@ if [[ -o INTERACTIVE && -t 2 ]]; then
   fi
 
 fi >&2
-
-# Execute Sway automatically
-if [[ "$TTY" = "/dev/tty1" && -s "$(where sway)" ]]; then
-  exec sway
-fi
