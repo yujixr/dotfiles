@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tomasr/molokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
