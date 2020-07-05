@@ -3,23 +3,24 @@
 ## Install
 
 ``` bash
-curl https://yuji.ne.jp/install.sh | bash
+curl https://yuji.ne.jp/install.sh | sh
 ```
 
 ## Update
 
 ``` bash
-curl https://yuji.ne.jp/update.sh | bash
+curl https://yuji.ne.jp/update.sh | sh
 ```
 
 ## Other configs
 
 ``` bash
+sudo pacman -S yay
+yay -S alacritty gvim docker llvm clang-tools-extra visual-studio-code-bin balena-etcher asunder makemkv
+sudo gpasswd -a $USER docker
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 chsh -s $(which zsh)
 chmod 600 $HOME/.ssh/id_*
-sudo gpasswd -a $USER docker
-sudo pacman -S llvm clang-tools-extra
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 ```
 
 ### Firefox Add-ons
