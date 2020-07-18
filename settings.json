@@ -9,5 +9,6 @@
     "search.useGlobalIgnoreFiles": true,
     "github.gitAuthentication": false,
     "editor.minimap.enabled": false,
-    "remote.restoreForwardedPorts": true
+    "remote.restoreForwardedPorts": true,
+    "git.confirmSync": false
 }
