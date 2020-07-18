@@ -30,6 +30,8 @@ if [ ! -d ${DOT_DIR} ]; then
       ln -snf "$DOT_DIR/$f" "$HOME/.$f"
       echo "Installed .$f"
     done
+    ln -snf "$DOT_DIR/settings.json" "$HOME/.config/Code/User/settings.json"
+    echo "Installed VS Code settings"
 else
     echo "dotfiles already exists"
     exit 1

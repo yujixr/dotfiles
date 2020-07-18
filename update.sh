@@ -30,3 +30,5 @@ do
     ln -snf "$DOT_DIR/$f" "$HOME/.$f"
     echo "Updated .$f"
 done
+ln -snf "$DOT_DIR/settings.json" "$HOME/.config/Code/User/settings.json"
+echo "Updated VS Code settings"

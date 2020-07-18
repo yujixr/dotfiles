@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "update.showReleaseNotes": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "git.autofetch": true,
+    "git.fetchOnPull": true,
+    "git.suggestSmartCommit": false,
+    "search.useGlobalIgnoreFiles": true,
+    "github.gitAuthentication": false,
+    "editor.minimap.enabled": false,
+    "remote.restoreForwardedPorts": true
+}
