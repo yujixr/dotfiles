@@ -20,6 +20,7 @@ for f in .??*;
 do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".gitignore" ]] && continue
+    [[ "$f" == ".gitmodules" ]] && continue
 
     ln -snf "$DOT_DIR/$f" "$HOME/$f"
     echo "Updated $f"

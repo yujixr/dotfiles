@@ -20,6 +20,7 @@ if [ ! -d ${DOT_DIR} ]; then
     do
         [[ "$f" == ".git" ]] && continue
         [[ "$f" == ".gitignore" ]] && continue
+        [[ "$f" == ".gitmodules" ]] && continue
 
         ln -snf "$DOT_DIR/$f" "$HOME/$f"
         echo "Installed $f"

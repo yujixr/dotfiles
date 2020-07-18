@@ -16,8 +16,9 @@ curl https://yuji.ne.jp/update.sh | sh
 
 ``` bash
 sudo pacman -S yay
-yay -S alacritty gvim docker hugo llvm clang-tools-extra visual-studio-code-bin fcitx-mozc fcitx-im kcm-fcitx veracrypt balena-etcher asunder makemkv
+yay -S alacritty gvim docker hugo llvm clang-tools-extra visual-studio-code-bin fcitx-mozc fcitx-im kcm-fcitx veracrypt balena-etcher asunder typora
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install wrangler
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 sudo gpasswd -a $USER docker
 chsh -s $(which zsh)
