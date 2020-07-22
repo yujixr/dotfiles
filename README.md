@@ -3,13 +3,13 @@
 ## Install
 
 ``` bash
-curl https://yuji.ne.jp/install.sh | sh
+curl https://yuji.ne.jp/install.sh | bash
 ```
 
 ## Update
 
 ``` bash
-curl https://yuji.ne.jp/update.sh | sh
+curl https://yuji.ne.jp/update.sh | bash
 ```
 
 ## Other configs
