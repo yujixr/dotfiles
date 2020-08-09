@@ -29,6 +29,22 @@ chmod 600 $HOME/.ssh/id_*
 
 Set HTTP Proxy to `freedbtest.dyndns.org` and set port 80
 
+## Install BlackArch
+
+``` bash
+# Run https://blackarch.org/strap.sh as root and follow the instructions.
+$ curl -O https://blackarch.org/strap.sh
+
+# Verify the SHA1 sum
+$ echo 9c15f5d3d6f3f8ad63a6927ba78ed54f1a52176b strap.sh | sha1sum -c
+
+# Set execute bit
+$ chmod +x strap.sh
+
+# Run strap.sh
+$ sudo ./strap.sh 
+```
+
 ### Firefox Add-ons
 
 - [Bitwarden](https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/)
