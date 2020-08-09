@@ -10,5 +10,7 @@
     "github.gitAuthentication": false,
     "editor.minimap.enabled": false,
     "remote.restoreForwardedPorts": true,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "editor.renderControlCharacters": true,
+    "C_Cpp.updateChannel": "Insiders"
 }
