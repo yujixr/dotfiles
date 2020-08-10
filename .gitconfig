@@ -5,6 +5,7 @@
 [user]
 	name = "YUJI"
 	email = "mail@yuji.ne.jp"
+	signingkey = mail@yuji.ne.jp
 [credential]
 	helper = cache --timeout=3600
 [color]
