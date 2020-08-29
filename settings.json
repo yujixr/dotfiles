@@ -12,5 +12,10 @@
     "remote.restoreForwardedPorts": true,
     "git.confirmSync": false,
     "editor.renderControlCharacters": true,
-    "C_Cpp.updateChannel": "Insiders"
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.fontFamily": "'Fira Code Retina', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+    "[rust]": {
+        "editor.defaultFormatter": "matklad.rust-analyzer"
+    }
 }

@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 #
 # Executes commands at the start of an interactive session.
 #
@@ -21,7 +14,33 @@ fi
 autoload -Uz compinit promptinit
 compinit
 promptinit
-prompt powerlevel10k
+eval "$(starship init zsh)"
+
+if [ "$(command -v vim)" ]; then
+    unalias -m 'vi'
+    alias vi='vim'
+fi
+
+if [ "$(command -v exa)" ]; then
+    unalias -m 'l'
+    unalias -m 'ls'
+    unalias -m 'll'
+    unalias -m 'la'
+    alias l='exa -G  --color auto --icons -a -s type'
+    alias ls='exa -G  --color auto --icons -s type'
+    alias ll='exa -l --color always --icons -s type'
+    alias la='exa -l --color always --icons -a -s type'
+fi
+
+if [ "$(command -v bat)" ]; then
+  unalias -m 'cat'
+  alias cat='bat -pp --theme="Nord"'
+fi
+
+if [ "$(command -v hexyl)" ]; then
+  unalias -m 'od'
+  alias od='hexyl'
+fi
 
 # Special keys
 # create a zkbd compatible hash;
@@ -81,6 +100,3 @@ setopt appendhistory                                            # Immediately ap
 setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
 setopt autocd                                                   # if only directory path is entered, cd there.
 setopt nonomatch                                                # Don't show error message
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -12,39 +12,6 @@ curl https://yuji.ne.jp/install.sh | bash
 curl https://yuji.ne.jp/update.sh | bash
 ```
 
-## Other configs
-
-``` bash
-sudo pacman -S yay
-yay -S alacritty gvim docker hugo llvm clang-tools-extra visual-studio-code-bin fcitx-mozc fcitx-im kcm-fcitx veracrypt balena-etcher asunder sane typora
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-cargo install wrangler
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
-sudo gpasswd -a $USER docker
-chsh -s $(which zsh)
-chmod 600 $HOME/.ssh/id_*
-```
-
-### Asunder config
-
-Set HTTP Proxy to `freedbtest.dyndns.org` and set port 80
-
-## Install BlackArch
-
-``` bash
-# Run https://blackarch.org/strap.sh as root and follow the instructions.
-$ curl -O https://blackarch.org/strap.sh
-
-# Verify the SHA1 sum
-$ echo 9c15f5d3d6f3f8ad63a6927ba78ed54f1a52176b strap.sh | sha1sum -c
-
-# Set execute bit
-$ chmod +x strap.sh
-
-# Run strap.sh
-$ sudo ./strap.sh 
-```
-
 ### Firefox Add-ons
 
 - [Bitwarden](https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/)
