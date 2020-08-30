@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 Plug 'prabirshrestha/async.vim'
@@ -28,9 +29,9 @@ set fileencoding=utf-8
 scriptencoding utf-8
 
 " Show settings
-colorscheme nord
 set number
 set title
+set cursorline
 set showmatch
 set list
 set visualbell
@@ -74,6 +75,17 @@ set smartcase
 set wrapscan
 set incsearch
 set hlsearch
+
+" Nord
+let g:nord_cursor_line_number_background = 1
+let g:nord_uniform_status_lines = 1
+let g:nord_bold_vertical_split_line = 1
+let g:nord_uniform_diff_background = 1
+let g:nord_bold = 0
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
+colorscheme nord
 
 " Powerline
 let g:airline_powerline_fonts = 1

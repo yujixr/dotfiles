@@ -14,7 +14,7 @@ curl https://yuji.ne.jp/update.sh | bash
 
 ### Firefox Add-ons
 
-- [Bitwarden](https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/)
+- [KeePassXC-Browser](https://addons.mozilla.org/firefox/addon/keepassxc-browser/)
 - [Nano Adblocker](https://addons.mozilla.org/firefox/addon/nano-adblocker-firefox/)
 - [Nano Defender](https://addons.mozilla.org/firefox/addon/nano-defender-firefox/)
 - [DuckDuckGo Privacy Essentials](https://addons.mozilla.org/firefox/addon/duckduckgo-for-firefox/)

@@ -1,7 +1,7 @@
 # Install packages
 # Asunder: Set HTTP Proxy to `freedbtest.dyndns.org` and set port 80.
 sudo pacman -S yay
-yay -S alacritty starship gvim tmux exa bat hexyl docker qemu virt-manager llvm clang-tools-extra cloudflare-wrangler visual-studio-code-bin fcitx-mozc fcitx-im kcm-fcitx veracrypt balena-etcher asunder sane typora ttf-fira-code nerd-fonts-fira-code
+yay -S alacritty starship gvim tmux exa bat hexyl docker qemu virt-manager llvm clang-tools-extra cloudflare-wrangler visual-studio-code-bin fcitx-mozc fcitx-im kcm-fcitx dropbox veracrypt balena-etcher asunder sane typora ttf-fira-code nerd-fonts-fira-code
 
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
