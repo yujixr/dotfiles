@@ -16,9 +16,13 @@
     "editor.fontFamily": "'Fira Code Retina', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
     "[rust]": {
-        "editor.defaultFormatter": "matklad.rust-analyzer"
+        "editor.defaultFormatter": "rust-lang.rust"
     },
     "[html]": {
-        "editor.defaultFormatter": "Wscats.eno"
-    }
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "explorer.confirmDragAndDrop": false
 }
