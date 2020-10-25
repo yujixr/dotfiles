@@ -13,6 +13,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
+Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
@@ -20,6 +21,9 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 " File encoding
@@ -69,6 +73,13 @@ if has('mouse')
   endif
 endif
 
+" Use line cursor
+if has('vim_starting')
+    let &t_SI .= "\e[6 q"
+    let &t_EI .= "\e[6 q"
+    let &t_SR .= "\e[4 q"
+endif
+
 " Search config
 set ignorecase
 set smartcase
@@ -103,5 +114,7 @@ let g:asyncomplete_auto_completeopt = 1
 let g:asyncomplete_popup_delay = 200
 
 " NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeIgnore = ['\.git$', '\.clean$', '\.swp$', '\.bak$', '\~$']
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
