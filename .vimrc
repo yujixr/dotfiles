@@ -7,9 +7,11 @@ endif
 
 " Install plugins
 call plug#begin('~/.vim/plugged')
-Plug 'arcticicestudio/nord-vim'
+Plug 'altercation/vim-colors-solarized'
+" Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
@@ -87,16 +89,17 @@ set wrapscan
 set incsearch
 set hlsearch
 
-" Nord
-let g:nord_cursor_line_number_background = 1
-let g:nord_uniform_status_lines = 1
-let g:nord_bold_vertical_split_line = 1
-let g:nord_uniform_diff_background = 1
-let g:nord_bold = 0
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
-let g:nord_underline = 1
-colorscheme nord
+" Color theme
+" let g:nord_cursor_line_number_background = 1
+" let g:nord_uniform_status_lines = 1
+" let g:nord_bold_vertical_split_line = 1
+" let g:nord_uniform_diff_background = 1
+" let g:nord_bold = 0
+" let g:nord_italic = 1
+" let g:nord_italic_comments = 1
+" let g:nord_underline = 1
+set background=light
+colorscheme solarized
 
 " Powerline
 let g:airline_powerline_fonts = 1
@@ -118,3 +121,7 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeIgnore = ['\.git$', '\.clean$', '\.swp$', '\.bak$', '\~$']
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" tmuxline
+let g:tmuxline_preset = 'powerline'
+let g:tmuxline_theme = 'airline'

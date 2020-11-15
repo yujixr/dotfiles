@@ -33,7 +33,7 @@ fi
 
 if [ "$(command -v bat)" ]; then
   unalias -m 'cat'
-  alias cat='bat -pp --theme="Nord"'
+  alias cat='bat'
 fi
 
 if [ "$(command -v hexyl)" ]; then
@@ -99,3 +99,13 @@ setopt appendhistory                                            # Immediately ap
 setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
 setopt autocd                                                   # if only directory path is entered, cd there.
 setopt nonomatch                                                # Don't show error message
+
+# Launch tmux.
+tmux_count=$(ps -ax | grep '[t]mux' | wc -l)
+if [ -s "$(where tmux)" ]; then
+  if [ $tmux_count = 0 ]; then
+    exec tmux -u new-session
+  elif [ $tmux_count = 1 ]; then
+    exec tmux -u attach
+  fi
+fi
