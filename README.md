@@ -16,6 +16,6 @@ curl https://yuji.ne.jp/update.sh | bash
 
 - [KeePassXC-Browser](https://addons.mozilla.org/firefox/addon/keepassxc-browser/)
 - [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
-- [DuckDuckGo Privacy Essentials](https://addons.mozilla.org/firefox/addon/duckduckgo-for-firefox/)
+- [Bypass Paywalls](https://github.com/iamadamdev/bypass-paywalls-chrome/releases/latest/download/bypass-paywalls-firefox.xpi)
 
 [Install samurai-filter](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/yujixr/samurai-filter/master/list.txt&title=samurai-filter)

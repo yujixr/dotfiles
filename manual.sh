@@ -1,16 +1,7 @@
 # Install packages
 # Asunder: Set HTTP Proxy to `freedbtest.dyndns.org` and set port 80.
 sudo pacman -S yay
-yay -S alacritty starship gvim tmux exa bat hexyl docker qemu virt-manager llvm clang-tools-extra cloudflare-wrangler visual-studio-code-bin fcitx-mozc fcitx-im kcm-fcitx dropbox veracrypt balena-etcher asunder sane gqrx typora ttf-fira-code nerd-fonts-fira-code
-
-# Install Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# Install VSCode extensions
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
-
-# Install BlackArch
-sudo curl https://blackarch.org/strap.sh | sudo sh
+yay -S alacritty starship gvim tmux exa bat hexyl docker qemu virt-manager cloudflare-wrangler visual-studio-code-bin quartus-free fcitx-mozc fcitx-im kcm-fcitx dropbox mullvad-vpn keepassxc veracrypt nmap balena-etcher makemkv asunder sane minecraft-launcher ttf-fira-code nerd-fonts-fira-code
 
 # Change default shell
 chsh -s $(which zsh)
