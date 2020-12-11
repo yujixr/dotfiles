@@ -12,6 +12,10 @@
 	ui = true
 [pull]
 	rebase = false
-[url "github:"]
-    pushInsteadOf = https://github.com/
-    pushInsteadOf = git@github.com:
+
+[url "git@github.com:"]
+	pushInsteadOf = git://github.com/
+	pushInsteadOf = https://github.com/
+[url "git@gitlab.com:"]
+	pushInsteadOf = git://gitlab.com/
+	pushInsteadOf = https://gitlab.com/
