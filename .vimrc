@@ -7,11 +7,11 @@ endif
 
 " Install plugins
 call plug#begin('~/.vim/plugged')
-Plug 'altercation/vim-colors-solarized'
+Plug 'joshdick/onedark.vim'
+" Plug 'altercation/vim-colors-solarized'
 " Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
@@ -99,7 +99,7 @@ set hlsearch
 " let g:nord_italic_comments = 1
 " let g:nord_underline = 1
 set background=light
-colorscheme solarized
+colorscheme onedark
 
 " Powerline
 let g:airline_powerline_fonts = 1
@@ -119,8 +119,6 @@ let g:asyncomplete_popup_delay = 200
 " NERDTree
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeIgnore = ['\.git$', '\.clean$', '\.swp$', '\.bak$', '\~$']
-autocmd vimenter * NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " tmuxline
 let g:tmuxline_preset = 'powerline'

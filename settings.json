@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "One Dark Pro",
     "update.showReleaseNotes": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -13,7 +13,7 @@
     "git.confirmSync": false,
     "editor.renderControlCharacters": true,
     "C_Cpp.updateChannel": "Insiders",
-    "editor.fontFamily": "'FiraCode Nerd Font Mono', 'FiraCode Nerd Font', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
     "[rust]": {
         "editor.defaultFormatter": "matklad.rust-analyzer"
@@ -28,4 +28,5 @@
     "window.zoomLevel": 0,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.largeFileOptimizations": false,
+    "update.mode": "manual"
 }
