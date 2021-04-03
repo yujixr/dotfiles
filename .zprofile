@@ -63,3 +63,4 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
