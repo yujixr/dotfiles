@@ -1,7 +1,8 @@
 # Install packages
 # Asunder: Set HTTP Proxy to `freedbtest.dyndns.org` and set port 80.
 sudo pacman -S yay
-yay -S alacritty starship gvim tmux exa bat hexyl htop docker qemu virt-manager cloudflare-wrangler visual-studio-code-bin quartus-free fcitx-mozc fcitx-im fcitx-configtool dropbox nextdns keepassxc balena-etcher makemkv asunder minecraft-launcher nerd-fonts-jetbrains-mono nerd-fonts-fira-code libz3
+sudo pacman -S alacritty starship gvim tmux exa bat hexyl htop docker qemu virt-manager fcitx-mozc fcitx-im fcitx-configtool keepassxc asunder libz3
+yay -S jetbrains-toolbox visual-studio-code-bin quartus-free nerd-fonts-jetbrains-mono nerd-fonts-fira-code dropbox nextdns cloudflare-wrangler balena-etcher makemkv minecraft-launcher
 
 # Change default shell
 chsh -s $(which zsh)
