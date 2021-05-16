@@ -1,6 +1,7 @@
 [core]
 	excludesfile = "$HOME/.gitignore_global"
 	autocrlf = false
+	editor = vi
 
 [user]
 	name = "YUJI"
@@ -19,3 +20,7 @@
 [url "git@gitlab.com:"]
 	insteadOf = git://gitlab.com/
 	insteadOf = https://gitlab.com/
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false

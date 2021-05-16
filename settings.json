@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Nord",
     "update.showReleaseNotes": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -28,5 +28,11 @@
     "window.zoomLevel": 0,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.largeFileOptimizations": false,
-    "update.mode": "manual"
+    "update.mode": "manual",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }
