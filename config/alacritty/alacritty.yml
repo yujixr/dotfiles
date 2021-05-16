@@ -409,7 +409,7 @@ schemes:
       cyan: '#6d96a5'
       white: '#aeb3bb'
 
-colors: *one_dark
+colors: *nord
 
 # Visual Bell
 #

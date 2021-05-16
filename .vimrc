@@ -7,9 +7,9 @@ endif
 
 " Install plugins
 call plug#begin('~/.vim/plugged')
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 " Plug 'altercation/vim-colors-solarized'
-" Plug 'arcticicestudio/nord-vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -90,16 +90,16 @@ set incsearch
 set hlsearch
 
 " Color theme
-" let g:nord_cursor_line_number_background = 1
-" let g:nord_uniform_status_lines = 1
-" let g:nord_bold_vertical_split_line = 1
-" let g:nord_uniform_diff_background = 1
-" let g:nord_bold = 0
-" let g:nord_italic = 1
-" let g:nord_italic_comments = 1
-" let g:nord_underline = 1
-set background=light
-colorscheme onedark
+let g:nord_cursor_line_number_background = 1
+let g:nord_uniform_status_lines = 1
+let g:nord_bold_vertical_split_line = 1
+let g:nord_uniform_diff_background = 1
+let g:nord_bold = 0
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
+" set background=light
+colorscheme nord
 
 " Powerline
 let g:airline_powerline_fonts = 1
