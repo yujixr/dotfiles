@@ -101,11 +101,11 @@ setopt autocd                                                   # if only direct
 setopt nonomatch                                                # Don't show error message
 
 # Launch tmux.
-tmux_count=$(ps -ax | grep '[t]mux' | wc -l | bc)
-if [ -s "$(where tmux)" ]; then
-  if [ $tmux_count = 0 ]; then
-    exec tmux -u new-session
-  elif [ $tmux_count = 1 ]; then
-    exec tmux -u attach
-  fi
-fi
+# tmux_count=$(ps -ax | grep '[t]mux' | wc -l | bc)
+# if [ -s "$(where tmux)" ]; then
+#   if [ $tmux_count = 0 ]; then
+#     exec tmux -u new-session
+#   elif [ $tmux_count = 1 ]; then
+#     exec tmux -u attach
+#   fi
+# fi
