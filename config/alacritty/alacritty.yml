@@ -490,9 +490,11 @@ live_config_reload: true
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
- program: /usr/bin/tmux
-#  args:
-#    - --login
+ program: /bin/zsh
+ args:
+    - -l
+    - -c
+    - "tmux"
 
 # Startup directory
 #
