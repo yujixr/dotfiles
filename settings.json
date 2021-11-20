@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Snazzy Light",
     "update.showReleaseNotes": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -37,5 +36,9 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "python.pythonPath": "/opt/homebrew/bin/python3"
+    "python.pythonPath": "/opt/homebrew/bin/python3",
+    "markdown.marp.themes": [
+        "~/dotfiles/marp.css"
+    ],
+    "workbench.colorTheme": "Snazzy Light"
 }

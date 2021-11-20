@@ -1,0 +1,70 @@
+/* marp.css */
+/* @theme yuji */
+
+@import 'default';
+
+:root {
+  --white: #ECEFF4;
+  --ash: #E5E9F0;
+  --gray: #788287;
+  --black: #2E3440;
+  --red: #BF616A;
+  --orange: #D08770;
+  --yellow: #EBCB8B;
+  --green: #A3BE8C;
+  --blue: #5E81AC;
+  --purple: #B48EAD;
+}
+
+section {
+  font-family: "Helvetica Neue", Arial, "A-OTF UD Shin Go Pro", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, var(--white), var(--white) 92%, var(--red) 92%, var(--red));
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gill Sans", "Helvetica Neue", Arial, "A-OTF UD Shin Go Pro", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  color: var(--red);
+}
+
+a {
+  color: var(--blue);
+}
+
+strong {
+  color: var(--red);
+}
+
+header {
+  font-family: "Gill Sans", "Helvetica Neue", Arial, "A-OTF UD Shin Go Pro", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  color: var(--gray);
+}
+
+footer {
+  font-family: "Gill Sans", "Helvetica Neue", Arial, "A-OTF UD Shin Go Pro", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  color: var(--ash);
+}
+
+footer::after {
+  content: " @yujixr";
+}
+
+section.title {
+  background: var(--red);
+}
+
+section.title h1, section.title header {
+  color: var(--white);
+}
+
+section.title h1 {
+  font-size: 5em;
+}
