@@ -33,6 +33,11 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--red);
 }
 
+th, td {
+  background-color: var(--red);
+  color: var(--white);
+}
+
 a {
   color: var(--blue);
 }
@@ -53,15 +58,15 @@ footer {
   color: var(--ash);
 }
 
-footer::after {
+/* footer::after {
   content: " @yujixr";
-}
+} */
 
 section.title {
   background: var(--red);
 }
 
-section.title h1, section.title header {
+section.title, section.title h1, section.title header {
   color: var(--white);
 }
 
