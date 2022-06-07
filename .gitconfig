@@ -16,7 +16,7 @@
 
 [url "git@github.com:"]
 	insteadOf = git://github.com/
-	insteadOf = https://github.com/
+	pushInsteadOf = https://github.com/
 [url "git@gitlab.com:"]
 	insteadOf = git://gitlab.com/
 	insteadOf = https://gitlab.com/

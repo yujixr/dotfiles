@@ -38,7 +38,9 @@
     },
     "python.pythonPath": "/opt/homebrew/bin/python3",
     "markdown.marp.themes": [
-        "~/dotfiles/marp.css"
+        "~/dotfiles/marp.css",
+        "./marp.css"
     ],
-    "workbench.colorTheme": "Snazzy Light"
+    "workbench.colorTheme": "Quiet Light",
+    "editor.foldingMaximumRegions": 65000
 }
