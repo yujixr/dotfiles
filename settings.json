@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Snazzy Light",
     "update.showReleaseNotes": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -25,10 +24,23 @@
         "ms-azuretools.vscode-docker": "workspace"
     },
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 0,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.largeFileOptimizations": false,
     "update.mode": "manual",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "latex-workshop.view.pdf.viewer": "tab",
-    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3"
+    "python.defaultInterpreterPath": "/opt/homebrew/opt/python@3.9/bin/python3.9",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "python.pythonPath": "/opt/homebrew/bin/python3",
+    "markdown.marp.themes": [
+        "~/dotfiles/marp.css",
+        "./marp.css"
+    ],
+    "workbench.colorTheme": "Quiet Light",
+    "editor.foldingMaximumRegions": 65000
 }
