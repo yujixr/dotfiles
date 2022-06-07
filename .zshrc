@@ -109,3 +109,5 @@ setopt nonomatch                                                # Don't show err
 #     exec tmux -u attach
 #   fi
 # fi
+
+export QSYS_ROOTDIR="/home/yuji/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"

@@ -64,3 +64,5 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+
+export QSYS_ROOTDIR="/home/yuji/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"

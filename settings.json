@@ -29,12 +29,6 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.largeFileOptimizations": false,
     "update.mode": "manual",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
     "latex-workshop.view.pdf.viewer": "tab",
     "python.defaultInterpreterPath": "/opt/homebrew/bin/python3"
 }
